@@ -1,24 +1,42 @@
 var startingPageEl = document.querySelector("#startingPage");
 var cardDeckEl = document.querySelector("#cardDeck");
 var summaryPageEl = document.querySelector("#summaryPage");
-setTime();
 
-function setTime() {
-    let countDownTime = 4;
+// sendToStartingPage();
 
-    let timerInterval = setInterval(function(){
-        countDownTime--;
-        cardDeckEl.textContent = countDownTime + " Time Remaining";
+// function sendToStartingPage(){
+//     cardDeckEl.textContent= " ";
+//     startingPageEl.bigMainText.textContent= "Start Game";
+   
+   
+// }
+// sendToCardDeck();
+// setTime();
+// function sendToCardDeck(){
+//     startingPageEl.textContent= " ";
+//     summaryPageEl = " ";
+// }
 
-        if(countDownTime===0){
-            clearInterval(timerInterval);
-            sendMessage();
-        }
-    },1000);
-}
+// function sendToSummary() {
+//     cardDeckEl.textContent= " ";
 
-function sendMessage() {
-    cardDeckEl.textContent= " ";
+//     summaryPageEl.textContent = "GameEnd"
 
-    summaryPageEl.textContent = "GameEnd"
-}
+// }
+
+// function setTime() {
+//     let countDownTime = 4;
+//     startingPageEl= " ";
+//     cardDeckEl.textContent= " ";
+    
+//     let timerInterval = setInterval(function(){
+//         countDownTime--;
+//         cardDeckEl.textContent = countDownTime + " Time Remaining";
+        
+//         if(countDownTime===0){
+//             clearInterval(timerInterval);
+//             sendToSummary();
+//         }
+//     },1000);
+    
+// }

@@ -10,9 +10,50 @@
 </head>
 
 <body style="text-align: center;">
-    <div id="startingPage"></div>
-    <div id="cardDeck"></div>
-    <div id="summaryPage"></div>
+
+    <section id="startingPage">
+        <div class="jumbotron">
+            <h1 class="display-3">Start Quiz!</h1>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
+              <button type="button" class="btn btn-primary">Primary</button>
+            </p>
+        </div>
+    </section>
+
+    <section id="cardDeck">
+       <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Previous Question</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#!">Time Remaining:</a>
+            </li>
+        </ul>
+
+        <div class="list-group">
+            <a href="#!" class="currentQuestion list-group-item active ">Cras justo odio</a>
+            <a href="#!" class="choice1 list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+            <a href="#!" class="choice2 list-group-item list-group-item-action">Morbi leo risus</a>
+            <a href="#!" class="choice3 list-group-item list-group-item-action">ello yellow fellow</a>
+        </div>          
+    </section>
+
+    <section id="summaryPage">
+        <h1 class="bigMainText">Quiz has Ended.</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-8 yourScore">
+                    <h2>Your Score</h2>
+                </div>
+
+                <div class="col-2 highScoreChart">
+                    <h3>High Score List</h3>
+                </div>
+            </div>
+          </div>
+          
+    </section>
     
     <script src="assets/script.js"></script>
 </body>
