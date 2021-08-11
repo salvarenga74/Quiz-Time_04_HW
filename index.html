@@ -13,42 +13,51 @@
 
     <section id="startingPage">
         <div class="jumbotron">
-            <h1 class="display-3">Start Quiz!</h1>
+            <h1 class="display-3">Lets Take a Little Quiz!</h1>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
-              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-primary startButton">Start</button>
             </p>
         </div>
     </section>
 
-    <section id="cardDeck">
+    <section id="cardDeck" class="hide">
        <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="nav-link" href="#!">Previous Question</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#!">Time Remaining:</a>
+              <a class="nav-link disabled timeLeft" href="#!"></a>
             </li>
         </ul>
 
-        <div class="list-group">
-            <a href="#!" class="currentQuestion list-group-item active ">Cras justo odio</a>
-            <a href="#!" class="choice1 list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-            <a href="#!" class="choice2 list-group-item list-group-item-action">Morbi leo risus</a>
-            <a href="#!" class="choice3 list-group-item list-group-item-action">ello yellow fellow</a>
+        <div class="list-group ">
+            <a href="#!" class="currentQuestion list-group-item active "></a>
+            <a href="#!" id ="choice1" class=" list-group-item list-group-item-action"></a>
+            <a href="#!" id ="choice2" class=" list-group-item list-group-item-action"></a>
+            <a href="#!" id ="choice3" class=" list-group-item list-group-item-action"></a>
+            <a href="#!" id ="choice4" class=" list-group-item list-group-item-action"></a>
         </div>          
     </section>
 
-    <section id="summaryPage">
+    <section id="summaryPage" class="hide">
         <h1 class="bigMainText">Quiz has Ended.</h1>
         <div class="container">
             <div class="row">
                 <div class="col-8 yourScore">
                     <h2>Your Score</h2>
+                    <p class="scorePointsDisplay">10 points</p>
+                    <div class="addToBoard">
+                        <form id="initialForm" method="POST">
+                            <label for="initialsText">Add your Initials: </label>
+                            <input type="text" placeholder="JS" name="initialsText" id="initialsText" />
+                          </form>
+                    </div>
+
                 </div>
 
                 <div class="col-2 highScoreChart">
                     <h3>High Score List</h3>
+                    <ul id="highScoreList"></ul>
                 </div>
             </div>
           </div>
