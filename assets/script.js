@@ -53,17 +53,18 @@ function submitAnswer(event) {
 }
 
 function getQuestion(){
+    currentQuestion = questionArray[questionCounter];
     currentQuestionText.textContent= currentQuestion.question;
     console.log("I want to see the questionCounter: " + questionCounter);
-    
+
     for( var i=0; i< currentQuestion.answers.length; i++){
         var button= answerButtons[i];
         var answer = currentQuestion.answers[i];
         button.textContent= answer;
     }
 }
-
 var currentQuestion = questionArray[questionCounter];
+
 // and call the thing that will replace all the text content
 
 
