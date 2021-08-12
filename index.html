@@ -23,15 +23,12 @@
     <section id="cardDeck" class="hide">
        <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link" href="#!">Previous Question</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link disabled timeLeft" href="#!"></a>
             </li>
         </ul>
 
         <div class="list-group ">
-            <a href="#!" class="currentQuestion list-group-item active "></a>
+            <div class="currentQuestion list-group-item active "></div>
             <a href="#!" id ="choice1" class=" list-group-item list-group-item-action"></a>
             <a href="#!" id ="choice2" class=" list-group-item list-group-item-action"></a>
             <a href="#!" id ="choice3" class=" list-group-item list-group-item-action"></a>
@@ -43,21 +40,21 @@
         <h1 class="bigMainText">Quiz has Ended.</h1>
         <div class="container">
             <div class="row">
-                <div class="col-8 yourScore">
-                    <h2>Your Score</h2>
-                    <p class="scorePointsDisplay">10 points</p>
+                <div class="col-6 yourScore card">
+                    <h2 class="card-header">Your Score</h2>
+                    <p class="scorePointsDisplay card-body"></p>
                     <div class="addToBoard">
                         <form id="initialForm" method="POST">
-                            <label for="initialsText">Add your Initials: </label>
-                            <input type="text" placeholder="JS" name="initialsText" id="initialsText" />
+                            <label for="initialsText">Add Your Name to Score Board</label>
+                            <input type="text" placeholder="John Driver" name="initialsText" id="initialsText" />
                           </form>
                     </div>
 
                 </div>
 
-                <div class="col-2 highScoreChart">
-                    <h3>High Score List</h3>
-                    <ul id="highScoreList"></ul>
+                <div class="col-4 highScoreChart card">
+                    <h3 class="card-header">High Score List</h3>
+                    <ul id="highScoreList" class="card-body"></ul>
                 </div>
             </div>
           </div>
