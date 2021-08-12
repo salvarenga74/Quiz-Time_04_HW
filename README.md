@@ -8,14 +8,19 @@ The User is expected to be able to load my quiz and click a start button to star
 
 
 ## Results
-You can View my Deployed Portfolio Here: https://salvarenga74.github.io/Portfolio_HW_02/
-<img src="assets/Images/Screen Shot 2021-08-05 at 4.53.07 AM.png" alt="Screen grab of my completed and deployed portfolio page."/>
+You can View my Deployed Quiz Here: https://salvarenga74.github.io/Quiz-Time_HW04/
+<img src="assets/First Question.png" alt="Screen grab of the first question in my card deck of questions"/>
+<img src="assets/Starting Page.png" alt="Screen grab of my the landing page of my quiz"/>
+<img src="assets/Summary Page.png" alt="Screen grab of the summary page that details the user's score and allows for input to add them to the leader board."/>
 
-I met the accepted criteria of this assignment and have gone beyond (in my opinion) to create a beautiful portfolio page that is a reflection of my potential as a developer and my work ethic. It contains 2 current photos of myself, has a section that describes the other applications I have deployed, contains a section with some background about myself, and gives my contact information.
 
-My Portfolio has a functioning Navigation Bar that jump down to the desired section within the webpage.  
+I met the accepted criteria of this assignment and have created clean user interface for a simple quiz. My quiz features a start button that allows the user to view the questions and to begin the timed portion of the quiz. 
 
-It also shows the advanced CSS that was expected such as growing sections when the user hovers over them, links on images that deploy to live websites, and a responsive layout that changed based on the screen view. 
+Upon viewing the first question, the use is able to select any of the answer choices and the next question will appear. The time remaining for the quiz is decrease by 2 seconds each time the user selects a wrong answer until time reaches 0. 
+
+When the timer reaches 0 or when the user has answered all 5 questions (depending on which event comes first) the quiz will end and the user will see their score. The score is based only on the amount of questions the user answered correctly, each question is worth 1 point. 
+
+Additionally, the summary page has the option to take in a user's name and store it as local storage so that the user can see their name on the High Score List.
 
 ---
 © 2021 Sally Alvarenga 🌺, LLC.
