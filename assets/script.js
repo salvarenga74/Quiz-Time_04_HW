@@ -2,7 +2,7 @@
 // Variables for Starting Page/ initial page
 var startingPageEl = document.querySelector("#startingPage");
 var startButton = document.querySelector(".startButton");
-var countDownTime = 20;
+var countDownTime = 60;
 var questionCounter = 0;
 var userPointsScored = 0;
 var individualScoreList = [];
@@ -20,25 +20,35 @@ var cardDeckEl = document.querySelector("#cardDeck");
 var timeRemaining = document.querySelector(".timeLeft");
 var currentQuestionText = document.querySelector(".currentQuestion");
 var answerButtons = document.querySelectorAll(".list-group-item-action");
-var currentQuestion = questionArray[questionCounter];
 var questionArray = [
     {
-        question: 'What color is the sky?', 
-        correctAnswer: 'blue',
-        answers: ['red','blue', 'green', 'purple']
+        question: 'Programming languages are most helpful to programmers because they:', 
+        correctAnswer: 'A) are precise',
+        answers: ['A) are precise','B) are very close to English', 'C) allow for only a single possible solution for a problem', 'D) automate the process']
     },
     {
-        question: 'Where do fish live?',
-        correctAnswer: 'water',
-        answers: ['land', 'sky', 'water','space']
+        question: 'Which of the following is a valid JavaScript variable name?',
+        correctAnswer: 'C) BR549',
+        answers: ['A) 0123', 'B) 37AB', 'C) BR549','D) Tax Rate']
     },
     {
-        question: 'What connects all trees?',
-        correctAnswer: 'mycelium',
-        answers: ['mycelium','roots','water','air']
+        question: 'In JavaScript, the escape symbol is the:',
+        correctAnswer: 'B) backslash (\)',
+        answers: ['A) slash (/)','B) backslash (\)','C) colon (:)','D) semicolon (;)']
+    },
+    {
+        question: 'In JavaScript, 17%5 is:',
+        correctAnswer: 'B) 2',
+        answers: ['A) the name of a variable','B) 2','C) 3','D) the same as 17/5']
+    },
+    {
+        question: 'In JavaScript, an empty string:',
+        correctAnswer: 'D) is written as ""',
+        answers: ['A) contains a single space enclosed in double quotes','B) is not valid','C) is the same as an undefined value','D) is written as ""']
     }
 
 ];
+var currentQuestion = questionArray[questionCounter];
 
 // 
 // Calls init() so that it fires when page opened
@@ -104,7 +114,7 @@ function submitAnswer(event) {
         else{
             countDownTime-=decrement;
         }
-        if(questionCounter>2){
+        if(questionCounter>4){
             sendToSummary();
             console.log("User reached end of question deck");
         }
@@ -162,7 +172,6 @@ initialForm.addEventListener("submit", function(event) {
     storingScores();
     renderPreviousScoreList();
 });
-
 
 // 
 // Timer Function
